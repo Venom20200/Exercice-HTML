@@ -1,0 +1,21 @@
+body {
+    background-color: cyan;
+}
+
+label {
+    font-size: 20px;
+    margin: 15px;
+    color: ;
+    border : dashed 3px;
+}
+
+
+.pseudo {
+    padding-right: 50px;
+    margin-left: 200px;
+}
+
+:hover .pseudo {
+    color: green;
+}
+

@@ -1,0 +1,56 @@
+* {
+    font-family: fantasy;
+}
+
+body {
+    width: 50%;
+    margin: auto; /* Gestion automatique des marges pour que mon tableau soit centré */
+    background-color: lightblue;
+}
+
+table {
+    border: dashed 4px #483d8b;
+    border-collapse: collapse; /* Rassemble les border ensemble pour obtenir une border unique */
+    width: 90%;
+    margin: 25px; /* Marge extérieur de la balise */
+}
+
+thead, tfoot {
+    background-color: #e6e6fa;
+    border: 2px solid #6a5acd;
+}
+
+tbody {
+    border: 2px solid #6a5acd;
+}
+
+th {
+    border: 2px dotted #6a5acd; /* dotted = pointillé */
+    padding: 4px; /* Marge intérieur, c'est ce qui permet d'éloigner du texte de la bordure de la balise */
+    background-color: rgb(245, 206, 196);
+    width: 25%;
+    color: maroon;
+}
+
+td {
+    font-size: 100%;
+    border: 2px dotted #6a5acd;
+    text-align: center;
+    padding: 5px;
+}
+
+td:first-child { /* Premier td pour aligner le texte à gauche de la première rangée */
+     text-align: left;
+     background-color: #e6e6fa
+}
+
+caption {
+    font-family:'Segoe UI', ;
+    font-size: 30px;
+    margin: 20px;
+    color: darkgreen;
+}
+
+tfoot td {
+    color: 
+}

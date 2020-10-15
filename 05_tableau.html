@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableux HTML</title>
+    <link rel="stylesheet" href="css/05_tableau.css">
+</head>
+<body>
+    
+    <table>
+        <!-- Titre du tableau-->
+
+        <!--"th" = Toujours en tête du tableau dans "thead", et le reste en "td"-->
+        <caption>Ventes</caption>
+
+        <!-- En tête du tableau-->
+        <thead> <!-- tr, "t" = Tableau et "h" = head -->
+            <tr> <!-- tr, "t" = Tableau et "r" = ligne -->
+                <th>Jours</th> <!-- th, "t" = Tableau et "h" = head -->
+                <th>Smartphones</th>
+                <th>Tablette</th>
+                <th>Portables</th>
+            </tr>
+        </thead>
+
+        <tfoot> <!-- Le W3C recommande de mettre le pied du tableau avant le "tbody" -->
+           <tr> 
+               <td>Total</td>
+               <td>22</td>
+               <td>26</td>
+               <td>24</td>
+           </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td>2</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>2</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>5</td>
+                <td>1</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>12</td>
+                <td>10</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>2</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+</body>
+</html>

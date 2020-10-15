@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/03_formulaire.css">
+</head>
+<body>
+    
+<!--Je déclare mon formulaire avec la balise "form"-->
+
+    <form>
+        <label>
+            Pseudo
+            <input class="pseudo" type="text" id="pseudo"  name="pseudo" placeholder="exemple" required> <!-- L'ID sert à utiliser la donnée avec d'autres langages, le placeholder contient le texte qui apparait dans l'input, type précise le type de donnée récupérée, "required" précise au navigateur que le champs est à renseigner obligatoirement-->
+            
+        </label>
+
+        <br>
+
+
+        <label for="mdp"> Mot de passe <span title="le mot de passe peut contenir...">***</span> </label>
+
+        <input type="password" name="mdp" placeholder="Mot de passe" required>
+
+        <br>
+
+
+        <!-- Email -->
+
+
+        <label for="email">Email</label>
+        <input type="email" name="email"placeholder="Email">
+
+        <br>
+
+
+        <!-- FICHIER -->
+
+
+        <label for="photo">Photo</label>
+        <input type="file" name="photo">
+
+        <br>
+        <br>
+        <!-- CASE A COCHER -->
+
+
+        <label for="Question 1">Quelle destination choisissez-vous ?</label>
+        <p>
+            <input type="checkbox" name="réponse01"> Italie
+            <input type="checkbox" name="réponse02"> Tunisie
+            <input type="checkbox" name="réponse03"> Espagne
+       </p>
+
+
+        <!-- CASE A COCHER A CHOIX UNIQUE -->
+
+
+        <label for="Question 1">Qui seront vos accompagnateurs ?</label>
+        <p>
+            <input type="radio" name="réponse11"> En famille
+            <input type="radio" name="réponse12" checked> Entre amis <!--"checked" = Choix coché par défaut-->
+            <input type="radio" name="réponse13"> Solo
+        </p>
+
+        <br>
+        <br>
+
+
+        <!-- ZONE DE TEXTE -->
+
+
+        <label for="commentaires">Commentaires</label>
+        <textarea name="commentaires" cols="80" raws="8"></textarea> <!--cols = nombre de colonnes et raws = nombre de lignes-->
+
+
+        <br>
+
+
+        <!-- BOUTTON ENVOIE DU FORMULAIRE -->
+
+
+        <!--Boutton pour envoyer le formulaire-->
+        <input type="submit" name="inscription" value="Envoyer">
+
+        <!--Boutton pour vider le formulaire-->
+        <input type="reset" name="annuler" value="Annuler">
+
+        <br>
+
+        <a href=" https://www.w3schools.com/html/html_form_input_types.asp" target="_blank" rel="noopener noreferrer">W3school, les types d'input</a>
+
+        <br>
+
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input" target="_blank" rel="noopener noreferrer">Petite documentation</a>
+
+
+    </form>
+
+
+
+</body>
+</html>
