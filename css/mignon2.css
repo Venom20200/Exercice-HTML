@@ -1,0 +1,121 @@
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 25px;
+}
+
+tbody {
+    border: 1px solid #1e1d22;
+}
+
+td {
+    border: 1px solid #19181d;
+    padding: 20px;
+    height: 10px;
+    width: 5px;
+}
+
+
+body {
+    width: 50%;
+    margin: auto;
+}
+
+.noir {
+    background-color: black;
+}
+.marron-fonce {
+    background-color: #3a2100;
+}
+
+.marron-clair {
+    background-color: #7c4d06;
+}
+
+.peau {
+    background-color: #f7ba76;
+}
+
+.peau-fonce {
+    background-color: #8f794a;
+}
+
+.vert1 {
+    background-color: darkgreen;
+}
+
+.vert2 {
+    background-color: mediumseagreen;
+}
+
+.vert-fonce {
+    background-color: #002b00;
+}
+
+.vert-clair {
+    background-color: lightgreen;
+}
+
+.bras-clair {
+    background-color: #dbb6a6;
+}
+
+.bras-fonce {
+    background-color: #7a2801;
+}
+
+.marron-corps {
+    background-color: #5a2807;
+}
+
+.jaune {
+    background-color: #c4c40f;
+}
+
+.blanc {
+    background-color: #bdd4b6;
+}
+
+.marron-corps-clair {
+    background-color: #92260b;
+}
+
+.ceinture {
+    background-color: #7a4f32;
+}
+
+.pentalon-fonce {
+    background-color: #ca7b32;
+}
+
+.pentalon-clair {
+    background-color: #f5b579;;
+}
+
+.sol {
+    background-color: darkolivegreen;
+}
+
+.sol-herbe {
+    background-color: darkgreen;
+}
+
+.soleil {
+    background-color: #e9c707;
+}
+
+.ciel-fonce {
+    background-color: #43adeb;
+}
+
+.ciel {
+    background-color: #153ba5;
+}
+
+.arbre {
+    background-color: #4e1900;
+}
+
+.feuille {
+    background-color: #27b927;
+}

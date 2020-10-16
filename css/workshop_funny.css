@@ -1,0 +1,46 @@
+body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 25px;
+}
+
+tbody {
+    border: 1px solid #1e1d22;
+}
+
+td {
+    border: 1px solid #19181d;
+    padding: 20px;
+    height: 10px;
+    width: 5px;
+}
+
+
+.jaune {
+    background-color: rgb(241, 173, 45);
+}
+
+.gris {
+    background-color: grey;
+}
+
+.noir {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue-m {
+    background-color: blue;
+    font-size: 40px;
+    color: red;
+    padding: 13px;
+}

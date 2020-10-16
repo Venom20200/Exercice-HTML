@@ -1,0 +1,22 @@
+.contenu {
+    height: 45em;
+    width: 45em;
+    background-color: cyan;
+    border-radius: 50%;
+    background: linear-gradient(to left, #40a497, #6840a4); /* dégradé qui démarre avec la première couleur en haut et la dernière en bas */
+    /* to left = la première couleur est à droite et la dernière à gauche */
+    /* lien vers un générateur de dégradés : cssgradient.io dans le slack */
+}
+
+body {
+    width: 40%;
+    margin: auto;
+}
+
+.cercle {
+    height: 30em;
+    width: 30em;
+    background-color: #a3b31c;
+    border-radius: 50%;
+    background: linear-gradient(to top, #e21e28, #deec0e);
+}
