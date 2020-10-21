@@ -1,0 +1,130 @@
+* {
+    font-family: sans-serif;
+}
+
+nav {
+    background: #000;
+    padding: 0 0.5em;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0; /* Permet de positionner l'élément en haut de page */
+    left: 0; /* Position à partir du bord gauche de l'écran */
+    margin: 0 0 20px; /* top right bottom left=right */
+}
+
+nav a {
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    height: 2.8em;
+    line-height: 2.7em; /* Centrer les nav */
+    padding: 0em 2em;
+    font-size: 1.2em;
+    transition: 1s;
+}
+
+nav a:hover {
+    background-color: #fda500;
+    color: black;
+    transform: rotateZ(360deg);
+    transition: 400ms;
+}
+
+body {
+    background: linear-gradient(51deg, rgba(30,81,217,1) 17%, rgba(0,0,0,1) 37%, rgba(255,255,255,1) 51%, rgba(206,214,102,1) 69%, rgba(210,77,77,1) 87%);
+
+}
+
+h1 {
+    color: #b91616;
+}
+
+h1:hover {
+    background: linear-gradient(10deg, rgba(0,0,0,1) 32%, rgba(255,255,255,1) 43%, rgba(206,214,102,1) 63%);
+}
+
+h2:hover {
+    color: rgb(240, 167, 11);
+    transform: scale(1.2);
+    margin-left: 20px;
+}
+
+.container {
+    width: 70%;
+    margin: 4% auto 2% auto;
+    background-color: #f1fcde;
+    padding: 2em;
+}
+
+mark {
+    background-color: #b5a7cf;
+}
+
+span {
+    background-color: #b5a7cf;
+}
+
+.container1 {
+    width: 70%;
+    margin: 2% auto;
+    background: #f0e9fd;
+    padding: 2%;
+}
+
+.container2, .container3 {
+    width: 44.5%;
+    padding: 2;
+    float: left;
+    background: linear-gradient(51deg, rgba(0,0,0,0.5522584033613445) 26%, rgba(30,81,217,0.3841911764705882) 30%, rgba(255,255,255,1) 51%, rgba(222,228,153,0.5634628851540616) 63%, rgba(206,214,102,0.4654236694677871) 69%, rgba(210,77,77,0.5466561624649859) 87%);
+}
+
+.container2 {
+    margin-right: 1.5%;
+}
+
+.container3 li:nth-of-type(11){
+    margin-left: 1.5%;
+    border: solid red;
+}
+
+.container3 li:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.container3 li:nth-of-type(7) {
+    opacity: 0.5;
+}
+
+
+.container4 {
+    margin-top: 2em;
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+    color: red !important;
+}
+
+li {
+    line-height: 30px;
+}
+
+/* li:nth-of-type(11) {
+    border: solid red;
+} */
+
+/* li:nth-of-type(1) {
+    font-weight: bold;
+}
+
+li:nth-of-type(7) {
+    opacity: 0.5;
+} */
+
+li:last-child {
+    color: red;
+}
