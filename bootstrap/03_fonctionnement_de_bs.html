@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonctionnement Bootstrap</title>
+    <!-- CDN = Content Delevery Network, lien vers la bibliothèque en ligne de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- CSS personnel TOUJOURS après celui du framework -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <!-- Bootstrap permet d'avoir un site immédiatement responsive, il faut savoir que les sites qui ne sont pas responsive ne sont plus référencé (référencement naturel) depuis mai 2015. Bootstrap utilise le principe de colonnes (12) -->
+
+    <div class="container">
+        <h1>Les containers ou blocs principaux</h1>
+    </div>
+
+    <div class="container-fluid c3">
+        <p>.container-fluid c3</p>
+    </div>
+
+    <div class="container c4">
+        <p>.container c4</p>
+    </div>
+    
+    <!-- La class .container-fluid de BS va occuper 100% de la largeur de l'écran, si elle est l'enfant d'une balise avec une largeur réduite elle ne dépassera pas celle de son parent.
+    
+    La class .container de BS permet de travailler sur une page occupant environ 70% de la largeur de l'écran, cette balise sera centrée : margin: 0 auto. -->
+
+    <br>
+
+    <div class="container">
+        
+        <h2>Le système de grille</h2>
+        <h3>Les lignes .row</h3>
+
+        <div class="row c1"></div>
+        <div class="row c2"></div>
+        <div class="row c3"></div>
+
+        <!-- La row ou rangée ou encore ligne est un des principes fondamental du display qu'utilise BS -->
+
+        <h3>Les colonnes .col</h3>
+
+        <div class="row no-gutters">
+
+        <div class="col c1">
+            Une colonne
+        </div>
+
+        <div class="col c2">
+            Une colonne
+        </div>
+
+        <div class="col c3">
+            Une colonne
+        </div>
+      </div>
+
+      <!-- Les row de BS ont un margin left et right de 15px, no-gutters permet de retirer ces padding -->
+
+      <!-- <div class="row no-gutters">
+
+        <div class="col c1">
+            Une colonne
+        </div>
+
+        <div class="col c2">
+            Une colonne
+        </div>
+
+        <div class="col-5 c3">
+            Une colonne
+        </div>
+
+        <div class="col c4">
+            Une colonne
+        </div>
+
+      </div> -->
+
+
+      <div class="row no-gutters">
+
+        <div class="col c1">
+            Une colonne
+        </div>
+
+        <div class="col c2">
+            Une colonne
+        </div>
+
+        <div class="col-5 c3">
+            Une colonne
+        </div>
+
+        <div class="col c4">
+            Une colonne
+        </div>
+
+        <div class="col c5">
+            Une colonne
+        </div>
+      </div>
+
+
+      <div class="row">
+          <div class="col-4 c1">Col-4 c1</div>
+          <div class="col-6 c2">Col-6 c2</div>
+          <div class="col-4 c3">Col-4 c3</div> <!-- 14 col -->
+      </div>
+
+<!-- Si loe nombre de colonnes dépassent 12, il y a un retour à la ligne -->
+
+
+      <h2>Les marges .offset</h2>
+
+      <!-- Si on veut mettre en place une marge avec BS, on peut utiliser la class .offset, la taille des marges est basée sur celle de colonnes. .offset-md-1 veut dire 1 colonne de marge à gauche -->
+
+
+      <div class="row">
+        <div class="col-md-4 c1">Col-md-4 c1</div>
+        <div class="col-md-4 offset-md-4 c2">col-md-4 offset-md-4 c2</div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-3 offset-md-3 c3">col-md3 offset-md-3 c3</div>
+        <div class="col-md-3 offset-md-3 c4">col-md-3 offset-md-3 c4</div>
+      </div>
+
+
+      <div class="row">
+          <div class="col-md-6 offset-md-3 c5">col-md-6 offset-md-3 c5</div>
+      </div>
+
+      <br>
+
+      <h2>Utilisation des medias-queries de BS .col-*</h2>
+
+
+      <!-- La class col-md-1 
+    
+           col = colonne -> mot invariable
+           md = medium -> lettes correspondant au comportement attendu selon la taille de l'écran
+
+
+           col-* (extra small -> xl)
+           col-sm-* (small -> xl -> Pour les tablettes)
+           col-md-* (medium small -> xl -> Pour les écrans 15 pouces)
+           col-lg-* (largesmall -> xl -> Pour les écrans larges)
+           col-xl-*(extra large -> xl -> Supérieur ou égal à 1 200px)
+
+
+           Ces valeurs sont des "breakpoints" comme dans les média queries vus dans le fichier 13_media_queries.css
+           
+
+           Comme BS est régit par la règle du "mobile first" on travaille toujours à partir de la version mobile pour finir avec la version écrans
+    -->
+
+
+
+           <div class="row">
+               <div class="col-md-8 c3">
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nisi deleniti consectetur eveniet ipsam deserunt iusto facilis nihil harum autem totam a, ratione non vitae.
+               </div>
+
+           <div class="col-md-3 offset-md-1 c4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero nisi deleniti consectetur eveniet ipsam deserunt iusto facilis nihil harum autem totam a, ratione non vitae.
+            </div>
+           </div>
+        
+           <br>
+
+           <h2>Allignement du texte</h2>
+
+           <div class="row">
+               <div class="col">
+                   <p class="text-left c1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt blanditiis eius aperiam quaerat sequi, cupiditate ab ipsa vitae! Ratione reprehenderit obcaecati hic velit omnis quod fugiat maxime voluptatum magni assumenda nihil illo soluta esse iste natus, labore ipsum perferendis consectetur aliquam in distinctio harum dolore eos unde? Modi, nulla officiis?</p>
+                   <hr>
+                   <p class="text-center c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laudantium minima, neque magni dolorum possimus natus necessitatibus maxime ea ipsum quod libero totam. Voluptates nisi incidunt, quis neque natus rem, pariatur, quae veniam magni doloribus totam autem facilis esse reiciendis. Deserunt at qui perspiciatis voluptatum impedit nam tempore facere laborum?</p>
+                   <hr>
+                   <p class="text-center c3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, distinctio! Assumenda consequuntur eveniet modi corporis aliquam, pariatur quibusdam ipsa exercitationem unde laudantium dolores voluptatibus eos. Laboriosam animi tempora beatae sunt placeat aliquid cupiditate. Maiores dolores fugiat iusto perferendis accusantium, sint minus expedita enim maxime inventore incidunt minima illo voluptatem est!</p>
+               </div>
+           </div>
+
+
+
+           <h2>Imbriquer des blocs de la grille: "nesting" (nidification</h2>
+
+
+           <div class="row">
+               <div class="col-sm-9">
+                   1er niveau : col-sm-9
+
+                   <div class="row">
+                       <div class="col-8 col-sm-6">
+                           2ème niveau : col-8 col-sm-6
+                       </div>
+
+                       <div class="col-4 col-sm-6">
+                            2ème niveau : col-4 col-sm-6
+
+                            <div class="row">
+                                <div class="col-4">3ème niveau</div>
+                                <div class="col-4">3ème niveau</div>
+                                <div class="col-4">3ème niveau</div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col-sm-3">1er niveau : col-sm-3</div>
+           </div>
+
+           <br>
+
+           <h2>Les couleurs de BS</h2>
+
+           <h3>Les alertes</h3>
+
+           <div class="alert alert-primary" role="alert">
+                Primary
+           </div>
+
+           <div class="alert alert-secondary" role="alert">
+                Secondary
+           </div>
+
+           <div class="alert alert-success" role="alert">
+                Success
+           </div>
+
+           <div class="alert alert-danger" role="alert">
+                Danger
+           </div>
+
+           <div class="alert alert-warning" role="alert">
+                Warning
+           </div>
+
+           <div class="alert alert-info" role="alert">
+                Info
+           </div>
+
+           <div class="alert alert-light" role="alert">
+                Light
+           </div>
+
+           <div class="alert alert-dark" role="alert">
+                Dark
+           </div>
+
+
+
+           <hr>
+        <h4>Les boutons</h4>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <!--<div class="w-100"></div>-->
+        <hr>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <hr>
+        <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+        <h2>Les formulaires</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Votre email">
+                <small id="emailHelp" class="form-text text-muted">Nous ne diffusons pas vos coordonnées.</small>
+            </div>
+            <div class="form-group">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" class="form-control" id="mdp" placeholder="Mot de passe">
+            </div>
+            <button type="submit" class="btn btn-outline-info btn-block">Envoyer</button>
+        </form>
+        <!--
+        BS permet des mises en forme variées des formulaires => à regarder dans les exemples fournis en documentation
+        -->
+        <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+        <h2>Les tableaux</h2>
+        <div class="col-6 m-auto">
+            <table class="table table-dark table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Couleur</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Kiwi</td>
+                    <td>Tigré</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Yuki</td>
+                    <td>Crème</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+        <h2>Le carousel</h2>
+        <!--
+        veiller à prendre des images qui ont la même taille en px
+        -->
+        <div class="col-8 m-auto">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/chaton.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/ufc2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/pattes.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/logo.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <!--🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾🐾-->
+        <h2>La navbar</h2>
+        <nav class="navbar navbar-light" style="background-color: #f7934c;">
+            <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Chercher" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Chercher</button>
+            </form>
+        </nav>
+        <hr>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Chercher" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Chercher</button>
+            </form>
+        </nav>
+        <hr>
+        <nav class="navbar navbar-dark bg-danger">
+            <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Chercher" aria-label="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Chercher</button>
+            </form>
+        </nav>
+        <hr>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+</html>
