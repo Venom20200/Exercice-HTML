@@ -1,0 +1,97 @@
+body {
+    width: 50%;
+    margin: auto;
+    background-color: #e1ebee;
+}
+
+table {
+    border: solid 2px black;
+    border-collapse: collapse; 
+    width: 90%;
+    margin: 25px; 
+}
+
+thead, tfoot {
+    background-color: #e6e6fa;
+    border: 2px solid black;
+}
+
+th {
+    padding: 50px;
+    border-right: 2px solid black;
+}
+
+tbody {
+    border: 2px solid black;
+}
+
+.espace-2 {
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+.espace-3 {
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+.espace-4 {
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+.espace-5 {
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+.espace-6 {
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+.espace-7 {
+    padding: 20px;
+    border: solid 2px black;
+    text-align: center;
+}
+
+.espace-9 {
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    color: #800202;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.espace-10 {
+    height: 200px;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.espace-11 {
+    text-align: center;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.espace-12 {
+    text-align: center;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    padding-right: 20px;
+}
+
+
+
+tfoot td {
+    border-right: 2px solid black;
+    text-align: center;
+}
+div td {
+    float: right;
+}

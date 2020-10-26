@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+    width: 40%;
+    font-family: cursive;
+    font-size: 14px;
+}
+
+table {
+    border: 1px dashed grey;
+}
+
+thead img {
+    width: 100%;
+}
+
+tfoot img {
+    width: 250px;
+}
+
+tbody tr td {
+    height: 80px;
+    text-align: center;
+}
+
+tfoot tr td{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;;
+}
+
