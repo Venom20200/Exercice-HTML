@@ -1,15 +1,54 @@
+/* Nous allons surcharger le style de Bootstrap
+   "!important" force le style à être appliqué, background-color:#d95700 !important*/
+
+
+nav.navbar.bg-primary, .bg-primary, a.btn-primary, anav-link.active {
+    background-color: #d95700 !important;
+    border-color: #d95700 !important;
+}
+
+
 body {
-    background-color: #dffab6;
+    background: linear-gradient(29deg, rgba(249,86,86,0.639093137254902) 7%, rgba(0,0,0,0.639093137254902) 23%, rgba(159,77,77,0.639093137254902) 44%, rgba(204,15,15,0.639093137254902) 53%, rgba(111,177,3,1) 61%, rgba(2,3,0,0.7147233893557423) 69%, rgba(127,189,28,0.7147233893557423) 76%);
+
 }
 
 .jumbotron-fluid {
-    background-color: white;;
+    background-color: white;
+    border-top: 3px solid rgb(219, 219, 219);
+} 
+
+.card {
+    background: linear-gradient(29deg, rgba(249,86,86,0.639093137254902) 5%, rgba(159,77,77,0.639093137254902) 11%, rgba(0,0,0,0.639093137254902) 23%, rgba(204,15,15,0.639093137254902) 30%, rgba(109,131,73,1) 36%, rgba(249,86,86,0.639093137254902) 53%, rgba(143,215,28,0.7147233893557423) 72%, rgba(2,3,0,0.7147233893557423) 79%);
+    transition-duration: 1000ms;
+}
+
+.card:hover {
+    transform: scale(2);
+}
+
+.nav-link {
+    color: #fa2e2e;
 }
 
 .nav-link:hover {
     background-color: #9b2d0b;
+} 
+
+h2 {
+    color: #0640df;
 }
 
-.bg-primary {
-    background-color: #9b2d0b !important;
+/* CAROUSEL */
+
+
+
+/* PROGRESS BAR */
+
+.progress-bar {
+    background-color: red;
+}
+
+.carousel {
+    margin-top: 20px;
 }
