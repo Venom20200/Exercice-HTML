@@ -1,0 +1,134 @@
+/* body {
+    height: 1500px;
+}
+
+.carre_red {
+    width: 70px;
+    height: 70px;
+    background: rgb(225, 65, 65);
+    position: relative;
+    top: -10px ;
+}
+
+.carre_blue {
+    width: 70px;
+    height: 70px;
+    background: royalblue;
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 1830px;
+    position: fixed;
+}
+
+.carre_green {
+    width: 70px;
+    height: 70px;
+    background: rgb(24, 105, 65);
+    position: relative;
+    bottom: -750px;
+}
+.carre_yellow {
+    width: 70px;
+    height: 70px;
+    background: rgb(240, 219, 99);
+    position: relative;
+    bottom: -680px;
+    right : -1820px;
+}
+
+.triangle {
+    position: absolute;
+    top: 90px;
+    left: 900px;
+    border:1px solid ;
+	border-color:#a807a8 transparent  transparent  transparent ;
+    border-width: 90px;
+    position: fixed;
+}
+
+.rond {
+    background-color: cyan;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    top: 400px;
+    left: 950px;
+} */
+
+
+body {
+    height: 1200px;
+}
+
+.carre {
+    height: 75px;
+    width: 75px;
+}
+
+.carre:first-of-type {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carre:nth-of-type(2) {
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+body .carre:nth-of-type(4) {
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.carre:last-of-type {
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.conteneur {
+    height: 100%;
+    margin: 80px;
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    border-top: 150px solid magenta;
+    border-right: 94px solid transparent;
+    border-left: 94px solid transparent;
+    position: sticky;
+    top: 0;
+    left: calc(50% - 90px);
+    z-index: 2;
+}
+
+.rond {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    background-color: cyan;
+    position: absolute;
+    top: calc(48% - 40px);
+    left: calc(50% - 40px);
+    z-index: 1;
+}
+
+.ombre {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    background-color: #00000083;
+    position: relative;
+    top: calc(20% - 40px);
+    left: calc(50% - 40px);
+}
